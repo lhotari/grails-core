@@ -30,7 +30,7 @@ import java.net.URL;
 
 import org.codehaus.groovy.control.CompilationFailedException;
 import org.codehaus.groovy.grails.io.support.GrailsIOUtils;
-import org.codehaus.groovy.grails.web.util.StreamByteBuffer;
+import org.grails.web.util.StreamByteBuffer;
 import org.codehaus.groovy.runtime.DefaultGroovyMethodsSupport;
 import org.springframework.core.io.Resource;
 

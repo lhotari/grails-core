@@ -17,7 +17,6 @@ package grails.gsp
 
 import java.lang.reflect.InvocationHandler
 import java.lang.reflect.Method
-import java.lang.reflect.Proxy
 import java.util.concurrent.ConcurrentHashMap
 
 import javax.servlet.ServletContext
@@ -25,10 +24,10 @@ import javax.servlet.http.Cookie
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
-import org.codehaus.groovy.grails.web.pages.FastStringWriter
-import org.codehaus.groovy.grails.web.pages.GroovyPagesTemplateEngine
-import org.codehaus.groovy.grails.web.pages.discovery.GrailsConventionGroovyPageLocator
-import org.codehaus.groovy.grails.web.pages.discovery.GroovyPageScriptSource
+import org.grails.web.pages.FastStringWriter
+import org.grails.web.pages.GroovyPagesTemplateEngine
+import org.grails.web.pages.discovery.GrailsConventionGroovyPageLocator
+import org.grails.web.pages.discovery.GroovyPageScriptSource
 import org.grails.web.servlet.mvc.GrailsWebRequest
 import org.springframework.context.ApplicationContext
 import org.springframework.context.ApplicationContextAware

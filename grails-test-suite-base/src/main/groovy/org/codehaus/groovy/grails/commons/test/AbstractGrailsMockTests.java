@@ -24,7 +24,7 @@ import java.io.IOException;
 
 import grails.core.DefaultGrailsApplication;
 import grails.core.GrailsApplication;
-import org.codehaus.groovy.grails.support.MockApplicationContext;
+import org.grails.support.MockApplicationContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.support.StaticMessageSource;
 import org.springframework.core.io.Resource;

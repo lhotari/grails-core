@@ -18,9 +18,9 @@ import org.grails.compiler.injection.GrailsAwareClassLoader
 import org.grails.plugins.DefaultGrailsPlugin
 import org.grails.plugins.domain.DomainClassGrailsPlugin
 import org.grails.plugins.MockGrailsPluginManager
-import org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletRequest
-import org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse
-import org.codehaus.groovy.grails.support.MockApplicationContext
+import org.grails.plugins.testing.GrailsMockHttpServletRequest
+import org.grails.plugins.testing.GrailsMockHttpServletResponse
+import org.grails.support.MockApplicationContext
 import org.grails.web.pages.DefaultGroovyPagesUriService
 import grails.web.pages.GroovyPagesUriService
 import grails.web.util.GrailsApplicationAttributes
@@ -93,13 +93,13 @@ abstract class AbstractGrailsControllerTests extends GroovyTestCase {
         ctx.registerMockBean("manager", mockManager)
         def dependantPluginClasses = [
             "org.grails.plugins.CoreGrailsPlugin",
-            "org.codehaus.groovy.grails.plugins.CodecsGrailsPlugin",
+            "org.grails.plugins.CodecsGrailsPlugin",
             "org.grails.plugins.domain.DomainClassGrailsPlugin",
             "org.grails.plugins.i18n.I18nGrailsPlugin",
             "org.grails.plugins.web.ServletsGrailsPlugin",
             "org.grails.plugins.web.mapping.UrlMappingsGrailsPlugin",
             "org.grails.plugins.web.controllers.ControllersGrailsPlugin",
-            "org.codehaus.groovy.grails.plugins.web.GroovyPagesGrailsPlugin",
+            "org.grails.plugins.web.GroovyPagesGrailsPlugin",
             "org.grails.plugins.web.mime.MimeTypesGrailsPlugin",
             "org.grails.plugins.web.filters.FiltersGrailsPlugin",
             "org.grails.plugins.converters.ConvertersGrailsPlugin",

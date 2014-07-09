@@ -88,7 +88,7 @@ class PerMethodTransactionalService {
 
         def corePluginClass = gcl.loadClass("org.grails.plugins.CoreGrailsPlugin")
         def corePlugin = new DefaultGrailsPlugin(corePluginClass,ga)
-        def dataSourcePluginClass = gcl.loadClass("org.codehaus.groovy.grails.plugins.datasource.DataSourceGrailsPlugin")
+        def dataSourcePluginClass = gcl.loadClass("org.grails.plugins.datasource.DataSourceGrailsPlugin")
 
         def domainPluginClass = gcl.loadClass("org.grails.plugins.domain.DomainClassGrailsPlugin")
         def dataSourcePlugin = new DefaultGrailsPlugin(dataSourcePluginClass, ga)
@@ -103,7 +103,7 @@ class PerMethodTransactionalService {
         domainPlugin.doWithRuntimeConfiguration(springConfig)
         hibernatePlugin.doWithRuntimeConfiguration(springConfig)
 
-        def pluginClass = gcl.loadClass("org.codehaus.groovy.grails.plugins.services.ServicesGrailsPlugin")
+        def pluginClass = gcl.loadClass("org.grails.plugins.services.ServicesGrailsPlugin")
         def plugin = new DefaultGrailsPlugin(pluginClass, ga)
         plugin.doWithRuntimeConfiguration(springConfig)
 
